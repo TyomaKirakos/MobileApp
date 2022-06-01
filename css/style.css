@@ -336,6 +336,10 @@ body{
 
 /* Услуги */
 
+.services-block{
+    margin-bottom: 80px;
+}
+
 .services-block__content{
     display: flex;
     flex-direction: column;
@@ -388,8 +392,8 @@ body{
     bottom: 0;
     left: 0;
     z-index: -1;
-    animation: balls 2s infinite linear alternate;
-    -webkit-animation: balls 2s infinite linear alternate;
+    animation: balls 2s infinite linear alternate-reverse;
+    -webkit-animation: balls 2s infinite linear alternate-reverse;
 }
 
 @keyframes balls {
@@ -404,11 +408,11 @@ body{
 
     to{
         opacity: 1;
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
+        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        -o-transform: translateY(50px);
 }
 }
 
