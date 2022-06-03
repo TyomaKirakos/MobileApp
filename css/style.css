@@ -43,7 +43,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 0;
+    padding: 15px 0;
     background-color: rgba(43, 43, 43, 0.6);
     backdrop-filter: blur(10px);
     font-size: 18px;
@@ -130,7 +130,7 @@ body{
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding: 150px 0 40px 0;
+    padding: 130px 0 40px 0;
     background: linear-gradient(104.49deg, #4D008A 0%, #3F003C 100%);
 }
 
@@ -470,4 +470,18 @@ body{
     font-weight: 300;
     font-size: 30px;
     max-width: 40%;
+}
+
+/* Этапы разработки */
+
+/* Калькулятор */
+
+.calculator-block__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator-block__heading{
+    margin-bottom: 35px;
 }
