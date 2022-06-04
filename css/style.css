@@ -35,6 +35,43 @@ body{
     font-weight: 700;
 }
 
+/* Кнопка возврата на верх */
+
+.go-up-btn{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 5;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(90deg, #4D008A 0%, #BE00B7 100%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 25px;
+    transition: transform 0.2s linear;
+    -webkit-transition: transform 0.2s linear;
+    -moz-transition: transform 0.2s linear;
+    -ms-transition: transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+}
+
+.go-up-btn:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 /* Шапка */
 
 .header{

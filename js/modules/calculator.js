@@ -90,7 +90,6 @@ const calculator = () => {
         percent_checks.forEach((percent_check) => {
             if (percent_check.querySelector('input[type=checkbox]').checked) {
                 final_percent_checks += Number(percent_check.querySelector('input[type=text]').value);
-                console.log(final_percent_checks);
             }
         });
 
@@ -98,8 +97,6 @@ const calculator = () => {
             isValid_form = false;
         } else {
             final_percent_checks += Number(cms_select.value);
-            console.log(final_percent_checks);
-            console.log(cms_select.value);
         }
         final_percent_checks = final_percent_checks / 100;
         return final_percent_checks;
