@@ -7,6 +7,8 @@
     <title>MobileApp</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js" type="module" defer></script>
 </head>
 <body>
@@ -258,7 +260,40 @@
             </div>
         </div>
     </div>
-
+    <div class="reviews-block">
+        <h2 class="reviews-block__heading heading">Отзывы наших клиентов</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide1">
+                    <div class="swiper-slide__review-block review-block">
+                        <img src="img/user.jpg" alt="Клиент" class="review-block__client-img">
+                        <p class="review-block__client-name">Алексей Иванов</p>
+                        <p class="review-block__review-text">Всё получилось шикарно! Тут явно 100 леонов из 10! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore magnam excepturi mollitia eius rem. Delectus in aut dolore, cupiditate quos voluptatum modi inventore, sint dolores incidunt rerum, impedit doloremque dolor?</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="swiper-slide__review-block review-block">
+                        <img src="img/user.jpg" alt="Клиент" class="review-block__client-img">
+                        <p class="review-block__client-name">Петр Ягодичкин</p>
+                        <p class="review-block__review-text">Всё получилось шикарно! Тут явно 100 леонов из 10! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestiae, iusto aliquam obcaecati molestias dolorem. Enim impedit voluptate tempore voluptates dicta aspernatur recusandae at minus aperiam sunt veniam, veritatis iure.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide3">
+                    <div class="swiper-slide__review-block review-block">
+                        <img src="img/user.jpg" alt="Клиент" class="review-block__client-img">
+                        <p class="review-block__client-name">Егор Бланский</p>
+                        <p class="review-block__review-text">Всё получилось шикарно! Тут явно 100 леонов из 10! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita molestiae iusto quaerat consectetur, necessitatibus quae delectus repellat ratione quibusdam rerum provident quod eos repudiandae nihil non accusantium eligendi vel inventore!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
     <div class="often-questions-block">
         <h2 class="heading often-questions-block__heading">Часто задаваемые вопросы</h2>
         <div class="often-questions-block__questions-block">

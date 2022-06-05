@@ -523,6 +523,111 @@ body{
     margin-bottom: 35px;
 }
 
+/* Отзывы */
+
+.reviews-block{
+    padding: 0px 35px;
+    margin-bottom: 80px;
+}
+
+.reviews-block__heading{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-block{
+    position: relative;
+    width: 500px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(54, 54, 54, 0.5);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+}
+
+.review-block::before{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    background: linear-gradient(180deg, #52008C 0%, #BB00B6 100%);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    position: absolute;
+    z-index: -1;
+    bottom: -50px;
+    left: -50px;
+}
+
+.review-block::after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    background: linear-gradient(180deg, #52008C 0%, #BB00B6 100%);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    right: -50px;
+}
+
+.review-block__client-img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+
+.review-block__client-name{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-block__review-text{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #BB00B6 !important;
+}
+
 /* Часто задаваемые вопросы */
 
 .often-questions-block{
@@ -691,6 +796,11 @@ body{
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    transition: transform 0.2s linear;
+    -webkit-transition: transform 0.2s linear;
+    -moz-transition: transform 0.2s linear;
+    -ms-transition: transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
 }
 
 .modal__form{
@@ -732,4 +842,17 @@ body{
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    transition: transform 0.2s linear;
+    -webkit-transition: transform 0.2s linear;
+    -moz-transition: transform 0.2s linear;
+    -ms-transition: transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+}
+
+.form__submit-btn:hover, .top-part__close-btn:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
