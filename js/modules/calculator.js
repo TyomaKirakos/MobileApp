@@ -26,12 +26,6 @@ const calculator = () => {
     let all_selects;
     let all_checkboxes;
 
-    // Обед таксиста чееееек
-    // console.log(screen_areas);
-    // console.log(percent_checks);
-    // console.log(number_checks);
-    // console.log(rollback_range);
-
     // ---------------------Навешивание функций------------------------------
     add_screen_btn.addEventListener('click', addingScreens)
     start_btn.addEventListener('click', calculation);
