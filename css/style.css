@@ -523,6 +523,108 @@ body{
     margin-bottom: 35px;
 }
 
+/* Часто задаваемые вопросы */
+
+.often-questions-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.often-questions-block__questions-block{
+    width: 100%;
+}
+
+.often-questions-block__heading{
+    margin-bottom: 35px;
+}
+
+.questions-block__question-block{
+    color: rgb(206, 206, 206);
+    border-top: 1px solid #CACACA;
+    border-bottom: 1px solid #CACACA;
+    padding: 35px;
+    cursor: pointer;
+    transition: color .5s linear;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -ms-transition: color .5s linear;
+    -o-transition: color .5s linear;
+}
+
+
+.questions-block__question-block:hover{
+    color: #fff;
+}
+
+.questions-block__question_active{
+    color: #fff;
+}
+
+.question-block__question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 25px;
+}
+
+.question__question-text{
+    font-size: 24px;
+}
+
+.question__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 100;
+    background: #ECECEC;
+    color: #262626;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.question__btn_active{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    background: linear-gradient(90deg, #4D008A 0%, #BE00B7 100%);
+    color: #fff;
+}
+
+
+.question-block__question-answer{
+    display: none;
+    text-align: justify;
+    margin-top: 35px;
+    animation: answerAppear 0.5s linear 1 normal forwards;
+    -webkit-animation: answerAppear 0.5s linear 1 normal forwards;
+}
+
+.question-block__question-answer_showed{
+    display: block;
+}
+
+@keyframes answerAppear {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
 /* Модалки */
 
 .modal-bg{

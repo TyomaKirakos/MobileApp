@@ -35,11 +35,13 @@ const phoneModal = () => {
 
     modalCloseBtn.addEventListener('click', function(){
         phoneModal.style.display = 'none';
+        form.reset();
     })
     
     window.addEventListener('click', function(e){
         if (e.target == phoneModal){
             phoneModal.style.display = 'none';
+            form.reset();
         }
     })
 

@@ -483,7 +483,7 @@ input:focus {
     outline: none
 }
 
-button {
+button{
     background: linear-gradient(90deg, #4D008A 0%, #BE00B7 100%);
     border: none;
     padding: 10px;
@@ -499,7 +499,7 @@ button {
     -o-border-radius: 20px;
 }
 
-button:hover {
+.calculator-block button:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);

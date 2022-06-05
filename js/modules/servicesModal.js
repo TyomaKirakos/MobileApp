@@ -45,11 +45,13 @@ const servicesModal = () => {
 
     modalCloseBtn.addEventListener('click', function(){
         modalWindow.style.display = 'none';
+        form.reset();
     })
 
     window.addEventListener('click', function(e){
         if (e.target == modalWindow){
             modalWindow.style.display = 'none';
+            form.reset();
         }
     })
 
