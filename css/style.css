@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
 
 *{
     margin: 0;
@@ -511,6 +512,31 @@ body{
 
 /* Этапы разработки */
 
+.dev-stages-block{
+    margin-bottom: 80px;
+}
+
+.dev-stages-block__content{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.dev-stages-block__heading{
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.dev-stages-block__stage{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.dev-stages-block__stage > span{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
 /* Калькулятор */
 
 .calculator-block__content{
@@ -521,6 +547,77 @@ body{
 
 .calculator-block__heading{
     margin-bottom: 35px;
+}
+
+/* Портфолио */
+
+.protfolio-block{
+    margin-bottom: 80px;
+}
+
+.portfolio-block__heading{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.work1{
+    background: url('../img/work1.jpeg');
+}
+
+.work2{
+    background: url('../img/work2.jpg');
+}
+
+.work3{
+    background: url('../img/work3.jpg');
+}
+
+.works__work{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.works__work:last-child{
+    margin-bottom: 0;
+}
+
+.work__name{
+    cursor: pointer;
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    font-size: 30px;
+    font-weight: 900;
+    background: #52008C;
+    padding: 10px 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: transform 0.3s ease-in;
+    -webkit-transition: transform 0.3s ease-in;
+    -moz-transition: transform 0.3s ease-in;
+    -ms-transition: transform 0.3s ease-in;
+    -o-transition: transform 0.3s ease-in;
+}
+
+.work__name:hover{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
 }
 
 /* Отзывы */
@@ -728,6 +825,52 @@ body{
     to{
         opacity: 1;
     }
+}
+
+/* Подвал */
+
+.footer{
+    width: 100%;
+    padding: 35px 0;
+    background-color: #4D008A;
+}
+
+.footer-contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.footer-contacts > a{
+    text-decoration: none;
+}
+
+.footer-contacts__logo{
+    font-size: 35px;
+    font-family: 'Hind';
+    font-weight: bold;
+    color: #fff;
+}
+
+.networks{
+    font-size: 16px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.networks__network{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.network__img{
+    width: 30px;
+    margin-right: 5px;
 }
 
 /* Модалки */
